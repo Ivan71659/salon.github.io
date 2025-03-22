@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }	
+    .imperial-script-regular, .link {
+      font-family: "Imperial Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    header {
+      background-color: #cbc8cc;
+      padding: 20px;
+    }
+    .link {
+      text-decoration: none;
+      margin: 0 50px;
+      color: black;
+      padding: 20px;
+      font-size: 50px;
+    }
+    .link:hover {
+      background-color: #555;
+    }
+    .image-container {
+      margin-top: 200px;
+      position: relative;
+      display: inline-block;
+    }
+    .image-container h1 {
+      position: absolute;
+      top: 20px;
+      left: 49%;
+      transform: translateX(-49%);
+      font-size: 100px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 150px;     
+      margin-left: 840px;
+    }
+    label, input[type="text"], input[type="email"], select {
+      display: block;
+      margin-bottom: 5px;
+    }
+    button {
+      background-color: #efe5f8;
+    }
+  </style>
+</head>
+  
+<body>
+  
+  <header>
+    <a class =  "link" href = "index.html">Home</a>
+    <a class =  "link" href = "gallery.html">Gallery</a>
+    <a class =  "link" href = "prices.html">Prices</a>
+    <a class =  "link" href = "treatment.html">Treatment</a>
+    <a class =  "link" href = "book.html">Appointment</a>
+  </header>
+
+  <h1>Book an Appointment</h1>
+  <form>
+    <label> Enter your first name: </label>
+    <input type = "text" required>
+
+    <label> Enter your last name: </label>
+    <input type = "text" required>
+
+    <label> Enter your email:</label>
+    <input type = "email" required>
+
+    <label> Enter your phone number:</label>
+    <input type = "text" required>
+
+    <label> haircut</label>
+    <select required> 
+      <option value = "" disabled selected>Select an option</option>
+      <option> low taper fade </option>
+      <option> bald </option>
+      <option> bowlcut </option>
+    </select>
+    
+    <label> how old are you? </label>
+    <input type = "number">
+    <br>
+    <br>  
+
+    <button type = "submit">Submit</button>
+  </form>
+</body>
+</html>
